@@ -102,7 +102,7 @@ if st.session_state.provider:
                     # Convert simple message history format to Gemini format if necessary, 
                     # or just pass the text for a single turn context
                     response = client.models.generate_content(
-                        model='gemini-2.5-flash',
+                        model='gemini-3.5-flash',
                         contents=prompt
                     )
                     full_response = response.text
